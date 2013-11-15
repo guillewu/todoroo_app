@@ -1,0 +1,9 @@
+<h4 data-list-id="<%= list.get("id") %>">
+	<%= list.escape("title") %>
+	<a href="#"><button type="button" class="new-note btn btn-primary btn-xs">New note</button></a>
+</h4>
+<ul>
+	<% list.get("notes").forEach(function(note) { %>
+		<li data-list-id="<%= list.get("id") %>" data-note-id="<%= note.get('id') %>"><%= note.escape("body") %></li>
+	<% }) %>
+</ul>

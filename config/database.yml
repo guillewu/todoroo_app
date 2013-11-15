@@ -1,0 +1,5 @@
+development:
+  adapter: postgresql
+  database: todo_app_dev
+  host: localhost
+  username: guillewu
