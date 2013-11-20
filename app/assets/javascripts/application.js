@@ -15,7 +15,11 @@
 //= require underscore
 //= require backbone
 //= require jquery.serializeJSON
-//= require jquery.ui.all
+//= require jquery.ui.draggable
+//= require jquery.ui.droppable
+//= require jquery.ui.resizable
+//= require jquery.ui.selectable
+//= require jquery.ui.sortable
 //= require todo_app
 //= require_tree ../templates
 //= require_tree ./models
