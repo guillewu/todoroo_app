@@ -8,7 +8,7 @@ TodoApp.Views.ShowBox = Backbone.View.extend({
 	render: function() {
 		var renderedContent = this.template();
 
-		this.$el.html("<h2>Drop here</h2>");
+		this.$el.html("<h2>Drop lists/notes here</h2>");
 		this.$el.find("h2").droppable();
 
 		return this;

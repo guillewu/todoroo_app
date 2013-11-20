@@ -17,8 +17,8 @@ TodoApp.Views.ListShow = Backbone.View.extend({
 		});
 
 		this.$el.html(renderedContent);
-		this.$el.find("h4").draggable();
-		this.$el.find("li").draggable();
+		this.$el.find("h4").draggable({ revert: true });
+		this.$el.find("li").draggable({ revert: true });
 		return this;
 	},
 

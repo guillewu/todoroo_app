@@ -23,7 +23,7 @@ TodoApp.Views.ListsIndex = Backbone.View.extend({
 				model: list
 			});
 			listShow.render();
-			that.$el.append(listShow.$el);
+			that.$el.find(".list-container").append(listShow.$el);
 		});
 
 		var box = new TodoApp.Views.ShowBox();
@@ -36,7 +36,7 @@ TodoApp.Views.ListsIndex = Backbone.View.extend({
 	createNewList: function() {
 		var newView = new TodoApp.Views.ListNew();
 		newView.render();
-		this.$el.append(newView.$el);
+		this.$el.find(".list-container").append(newView.$el);
 	},
 
 	saveList: function(event) {
