@@ -11,6 +11,13 @@
 
 <div class="container">
 	<div class="row">
+		<% if current_user %>
+			Welcome <%= current_user.name %> | <%= link_to "sign out", signout_path %>
+		<% else %>
+			<%= link_to "sign in with twitter", "/auth/twitter" %> | 
+			<%= link_to "sign in as guest", "/guest" %>
+		<% end %>
+		
 		<div id="backbone-body">
 			<%= yield %>
 		</div>

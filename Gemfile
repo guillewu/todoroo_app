@@ -9,7 +9,9 @@ gem 'pg'
 gem 'backbone-on-rails'
 gem 'jquery-ui-rails'
 gem 'sass-rails',   '~> 3.2.3'
-
+gem 'figaro'
+gem 'omniauth'
+gem 'omniauth-twitter'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

@@ -1,5 +1,6 @@
 class NotesController < ApplicationController
   respond_to :json
+  before_filter :require_user
   
   def create
     @note = Note.new(params[:note])

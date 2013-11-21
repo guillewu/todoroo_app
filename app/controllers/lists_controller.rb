@@ -1,8 +1,10 @@
 class ListsController < ApplicationController
   respond_to :json
+  before_filter :require_user
 
   def create
     @list = List.new(params[:list])
+    @list.user_id = current_user.id
 
     if @list.save
       render :json => @list
@@ -12,7 +14,7 @@ class ListsController < ApplicationController
   end
 
   def index
-    @lists = List.all
+    @lists = List.where(:user_id => current_user.id)
 
     render :json => @lists, :include => :notes
   end
