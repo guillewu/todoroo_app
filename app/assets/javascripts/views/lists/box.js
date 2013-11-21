@@ -9,6 +9,7 @@ TodoApp.Views.ShowBox = Backbone.View.extend({
 		var renderedContent = this.template();
 
 		this.$el.html("<h2>Drop lists/notes here</h2>");
+		this.$el.append("<img src='../../../images/rails.png'>")
 		this.$el.find("h2").droppable();
 
 		return this;

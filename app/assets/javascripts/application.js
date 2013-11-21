@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require twitter/bootstrap
 //= require jquery.serializeJSON
 //= require jquery.ui.draggable
 //= require jquery.ui.droppable
