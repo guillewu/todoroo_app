@@ -15,16 +15,18 @@
 		This site is under construction!
 	</div>
 	<div class="row">
-		<% if current_user %>
-			Welcome <%= current_user.name %> | <%= link_to "sign out", signout_path %>
-		<% else %>
-			<%= link_to "sign in with twitter", "/auth/twitter" %> | 
-			<%= link_to "sign in as guest", "/guest" %>
-			<p class="lead">Log in as guest or through twitter and start creating your own todo lists!</p>
-		<% end %>
-		
-		<div id="backbone-body">
-			<%= yield %>
+		<div class="col-md-6 col-md-offset-4">
+			<% if current_user %>
+				Welcome <%= current_user.name %> | <%= link_to "sign out", signout_path %>
+			<% else %>
+				<%= link_to "sign in with twitter", "/auth/twitter" %> | 
+				<%= link_to "sign in as guest", "/guest" %>
+				<p class="lead">Log in as guest or through twitter and start creating your own todo lists!</p>
+			<% end %>
+			
+			<div id="backbone-body">
+				<%= yield %>
+			</div>
 		</div>
 	</div>
 </div>

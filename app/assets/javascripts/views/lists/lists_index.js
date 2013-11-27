@@ -8,7 +8,7 @@ TodoApp.Views.ListsIndex = Backbone.View.extend({
 	events: {
 		"click .new-list": "createNewList",
 		"submit form.create-list": "saveList",
-		"drop h2": "boxAction"
+		"drop img": "boxAction"
 	},
 
 	render: function() {
